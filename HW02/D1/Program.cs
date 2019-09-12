@@ -43,6 +43,9 @@ namespace C4
                 {
                     z++;
                 }
+                
+               
+
                 if (array[j] == 0)
                 {
                     zero++;
@@ -63,15 +66,21 @@ namespace C4
                 
             }
            //d.1 question 1 answer
+           //printing three positive number
             WriteLine($"three positive integer is {z}.");
             //d.1 question 2 answer
+            // printing zeros
             WriteLine($"number of zeros is {zero}.");
             //d.1 question 3 ans
+            //printing even number
             WriteLine($"number of even is {even}.");
-            //d.1 question 4 answer
+            //d.1 question 5 answer
+            //printing max number
             WriteLine($"largest number  is {max}.");
-            //d.1 question5 answer
+            //d.1 question6 answer
+            //printing smallest number
             WriteLine($"smallest number  is {min}.");
+
             // d1 question 4
             for ( int j = 1; j < count; j++)
             {
@@ -90,6 +99,8 @@ namespace C4
                 //d1 question 4 answer
                 WriteLine("asending order");
             }
+
+
             // d.1 question 7 
             if(count%2 == 0)
             {
