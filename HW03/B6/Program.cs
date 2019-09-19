@@ -11,50 +11,43 @@ namespace B6
     {
         static void Main(string[] args)
         {
+            int i = 1;
             int count = 0;
-            int previous = 0;
             int min = int.MaxValue;
-           // bool flag = false;
-            int preprevious = 0;
-            int preprevious1 = 0;
 
-            while (true)
+            string output = "";
+            WriteLine("enter input");
+
+            while (i > 0)
             {
 
-
-
-
-                WriteLine("enter number");
-                int currentNumber = int.Parse(ReadLine());
-                if (currentNumber <= 0)
+                count++;
+                i = int.Parse(ReadLine());
+                if (i < min)
                 {
-                    break;
+                    min = i;
                 }
-                else
+                else if (min*min <= i)
                 {
-                    WriteLine($"current number is {currentNumber}");
-                    
-                    if (currentNumber < min)
-                    {
-                        min = currentNumber;
-                    }
+                    output += i + "|";
+                    WriteLine("count:" + count + "\n output:" + output);
+                    WriteLine("\n Enter new set of numbers:");
+                    i = 1;
+                    count = 0;
+                    min = int.MaxValue;
                 }
-                preprevious1 = preprevious;
-                preprevious = previous;
-                previous = currentNumber;
-                int a = min * min;
-                if (a < previous)
+                if (count != 0)
                 {
+                    output += i + ",";
 
-                    count++;
-
-                    WriteLine("Smallest number in the sequence is : {0}", min);
-                    WriteLine($"count is : {count}");
-                    WriteLine("sequence is {0}, {1} {2}", preprevious1, preprevious, previous);
                 }
-                
             }
+            WriteLine("\n  result: " + output);
 
+
+
+                
+                
 
 
 
