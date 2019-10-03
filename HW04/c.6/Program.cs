@@ -19,6 +19,7 @@ namespace c._6
             bool alternate = false;
             bool smooth = false;
             bool secondhalf = false;
+            bool alternatingorder = false;
 
             string result = "";
            
@@ -102,6 +103,19 @@ namespace c._6
                     smooth = false;
                 }
 
+                // QC.9.f alternating numbers
+
+                if((current>previous && current+1 <current) || (current<previous && current+1 > current))
+                {
+                    alternatingorder = true;
+                }
+                else
+                {
+                    alternatingorder = false;
+                }
+
+
+
 
                 previous = current;
             }
@@ -113,6 +127,7 @@ namespace c._6
             Console.WriteLine("result is {0}", result);
             Console.WriteLine("smooth transition is  {0}", smooth);
             Console.WriteLine("letter in second half  {0}", secondhalf);
+            Console.WriteLine($"alternating order is {alternatingorder}");
 
 
 
