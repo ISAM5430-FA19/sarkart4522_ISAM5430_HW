@@ -69,7 +69,7 @@ namespace B3
             }
             else if(GPA == 7 || GPA == 4 ||GPA==10)
             {
-                WriteLine(grade + "+");
+                WriteLine(grade + "+"); 
             }
             else if(GPA == 12)
             {
