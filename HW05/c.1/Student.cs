@@ -95,5 +95,6 @@ namespace c._1
             this._gpa = GPA;
             this._major = Major;
         }
+        
     }
 }
