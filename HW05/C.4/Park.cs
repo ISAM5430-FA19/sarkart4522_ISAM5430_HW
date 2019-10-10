@@ -74,7 +74,7 @@ namespace C._4
         public override string ToString()
         {
             return $"parkname: {Parkname}" + "," + $"Facility: {Facility}" + "," + $"parktype: {ParkType}" + "," + $"visitors {Visitors}" + "," +
-                $"Employee {Employee}" + "," + $"Location: {Locationpark}" + "," + $"Budget:{Budget}" + "," + $"fees is : {Fees}";
+                $"Employee {Employee}" + "," + $"Location: {Locationpark}" + "," + $"Budget is:{Budget}" + "," + $"fees is : {Fees}";
                    
         }
 
